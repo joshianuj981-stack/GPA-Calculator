@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced GPA Calculator</h1>
+    <p>Enter your course information below.</p>
+
+    <table id="courseTable">
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Semester</th>
+          <th>Credits</th>
+          <th>Level</th>
+          <th>Letter Grade</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="buttons">
+      <button onclick="addRow()">Add Course</button>
+      <button onclick="calculateGPA()">Calculate GPA</button>
+    </div>
+
+    <div class="results">
+      <h2 id="gpa">Unweighted GPA: 0.00</h2>
+      <h2 id="weighted">Weighted GPA: 0.00</h2>
+      <h3 id="credits">Total Credits: 0</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
